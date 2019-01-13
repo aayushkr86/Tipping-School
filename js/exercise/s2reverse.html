@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>reverse</title>
+        </head>
+        <body>
+            <script>
+            var str=prompt("enter a string","string");
+            reverse(str);
+
+            function reverse(str)
+            {
+                var j,len;
+                var rev="";
+                len=str.length;
+                for(j=len-1;j>=0;j--)
+                {
+                rev+=str[j];                   
+                }
+               document.write("reverse string"+rev);
+            }
+            </script>
+            </body>
+            </html>

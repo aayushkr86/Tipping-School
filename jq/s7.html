@@ -1,0 +1,25 @@
+<html>
+  <head>
+   <title>Sample Code7</title>
+   <style>
+   </style>
+   <script src="js/jquery-2.1.4.min.js"></script>
+   <script>
+     $(document).ready(function() {
+     $("span").hover(function(){
+     $("span").text("Mouse In");
+     },
+     function(){
+      $("span").text("Mouse Out");
+      });
+      $("p").hover(function(){
+      $("p").css("background-color","red");
+      });
+      });
+    </script>
+  </head>
+  <body>
+   <span style="font-size:40px;color:red;">Hover over Here!!!</span>
+   <p style="font-size:20px;color:purple;">Mouse over here!!!</p>
+  </body>
+</html>

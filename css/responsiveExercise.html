@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>Responsive</title>
+    <style>
+        *{
+          box-sizing:border-box;
+           padding:0;
+           margin:0;
+        }
+        .header, .footer{
+           text-align:center;
+           border:1px solid black;
+           padding:1px;
+           margin:4px;
+          clear:both;
+          }
+      #box1{
+          height:170px;
+          width:200px;
+          border:1px solid black;
+          margin:4px;
+          }
+          #box2{
+        height:80px;
+        width:200px;
+        border:1px solid black;
+        margin:4px;
+        }
+    #box3{
+          height:400px;
+          width:900px;
+          border:1px solid black;
+          padding-left:40px;
+          padding-top:20px;
+          margin-left:110px;
+          float:left;
+         background-image:url("https://img.clipartfest.com/f6eb528de5e809d77dd624bcab5e46b8_family-tree-background-family-tree-clipart-transparent-background_900-880.jpeg");
+         background-position:center;
+         background-repeat: no-repeat;
+         }
+    #box4{
+        height:120px;
+        width:260px;
+        border:1px solid black;
+        margin:4px;
+        float:right;
+        } 
+        
+    #box5{
+        height:80px;
+        width:260px;
+        border:1px solid black;
+        margin:4px;
+        float:right;
+        } 
+
+        #box6{
+        width:100px;
+        height:170px;
+        border:hidden;
+        float:left;
+        }
+        
+        /*iphone 6*/
+@media(min-width:50px) and (max-width:667px){
+
+    .header,.footer{
+           text-align:center;
+           border:1px solid black;
+           margin:4px;
+          }
+      #box1{
+          width:100%;
+          border:1px solid black;
+          text-align:center;
+          }
+    #box2{
+        width:100%;
+        border:1px solid black;
+        }
+    #box3{
+          width:98%;
+          border:1px solid black;
+          margin:4px;
+          margin-top:100px;
+          margin-right:10%;      
+         background-image:url("https://img.clipartfest.com/f6eb528de5e809d77dd624bcab5e46b8_family-tree-background-family-tree-clipart-transparent-background_900-880.jpeg");
+         background-position:center;
+         background-repeat: no-repeat;
+         }
+    #box4{
+        width:98%;
+        border:1px solid black;
+        margin-right:4px;
+        } 
+        
+    #box5{
+        width:98%;
+        border:1px solid black;
+        margin:4px;
+        }
+    #box6{
+        width:98%;
+        padding:1px;
+        border:hidden;
+        }
+}             
+
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Merrill's first principles of education</h1>
+    <p>This page demonstrate how to create a layout with floats.</br><a href="http://www.google.com">http://edutechwiki.unige.ch/en/CSS_float_tutorial.</a></br>
+    Left,middle and right columns are float:left and with is defined with a percentage.</p>
+    </div>
+<div id="box6">
+<div id="box1">M.David Merril</br><img src="http://isdgo.com/wp-content/uploads/2013/11/David-Merrill-Education.jpg" height="150px" width="30%" alt="photo"></div>
+<div id="box2">This is just a CSS example.See the links to the right if you are intrested in the subject.</div>
+</div>       
+        <div id="box3">
+        <ol>
+        <li><b>The demontration principle</b></br>Learning is promoted when learners observes ademonstration</li>
+        <li><b>The application principle</b></br>Learning is promoted when learners apply the new knowledge</li>
+        <li><b>The activation principle</b></br>Learning is promoted when learners activate prior knowledge or experience</li>
+        <li><b>The integration principle</b></br>Learning is promoted when learners integrate their new knowledge into their every day life</li>
+        <li><b>The task-centered principle</b></br>Learning is promoted when learners engage in a task-centered instructional strategy</li>
+        </ol>
+        </div>
+
+
+<div id="box4">MERRIL,M.D(2002). First principles of intrucytions. Eduacation Technology research and development, 50(3) 43-59.Rtrived,may2017 from
+    <a href="www.google.com">xyzlink.com</a></div>
+<div id="box5"><a href="www.google.com">First Principles of Education</a></div>
+
+<div class="footer">Made by AK,may2017</br>Tree by aayush kumar</br>
+<b>@Copyright</b>
+</div>
+</body>
+</html>

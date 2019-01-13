@@ -1,0 +1,225 @@
+<!doctype html>
+
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <!-- ---------------------- NAVBAR ---------------------------------------- -->
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"> Tipping School<br><small>Your Tipping Point</small> </a>
+                    </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <a href="#">BLOG</a></li>
+                        <li> <a href="#">ABOUT US</a></li>
+                        <li> <a href="#">OUT MENTORS</a></li>
+                        <li> <a href="#">FOR BEGINNERS</a></li>
+                        <li> <a href="#">FOR PROFESSIONALS</a></li>
+                        <li> <a href="#">HOME</a></li>
+                    </ul>
+                </div> <!-- collapsable-nav ends -->
+            </div>
+        </nav>
+
+        <!-- ---------------------- JUMBOTRON -------------------------------------- -->
+
+        <div id="jumboBox">
+            <div class="jumbotron">
+                <h3>We don't give jobs</h3><br>
+                <h2>We make your career<br> in <br>Data Science <br> and in <br>Full Stack Development</h2>
+            </div>
+        </div>
+
+        <!--  ------------------------- COURSE INFO AND CONTACT US ------------------ -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 pull-left" id="courseInfo">
+                <h4>Why Tipping School is a place for me</h4>
+                <div id="course" class="pull-left">
+                    <div id="dataScience">Data Science</div>
+                    <div id="fullStackDeveloper">Full Stack Developer</div>
+                    <div id="angularBootcamp">Angular Bootcamp</div>
+                    <div id="reactRedux">React/Redux Bootcamp</div>
+                    <!-- ADD MORE COURSE HERE -->
+                </div>
+                <div id="info" >
+                    <div id="dataScienceInfo">Some Thing 1</div>
+                    <div id="fullStackDeveloperInfo" hidden>Some Thing 2</div>
+                    <div id="angularBootcampInfo" hidden>Some Thing 3</div>
+                    <div id="reactReduxInfo" hidden>Some Thing 4</div>
+                    <!-- ADD MORE INFORMATION ABOUT COURSE HERE -->
+                </div>
+            </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 pull-right" id="contactUs">
+                <h6>Please Don't apply if you are looking for quick job and easy solutions.</h4>
+                <h4>Yes,I am intrested and i am looking for a strong career</h2>
+                
+                <form action="" method="POST" id="contactForm">  
+                    <select name="courseSelect">
+                        <option value="dataScience">Data Science</option>
+                        <option value="fullStackDeveloper">Full Stack Developer</option>
+                        <option value="angularBotcamp">Angular Bootcamp</option>
+                        <option value="reactRedux">React/Redux Bootcamp</option>
+                    </select><br>
+
+                    <input type="text" id="name" placeholder="Name" min="2" required/><br>
+                    <input type="number" id="mobile" maxlength="10"  placeholder="Mobile" pattern="^\d{10}$" required/><br>
+                    <input type="email" id="email" placeholder="E-Mail" required /><br>
+                    <textarea id="message" rows="8" cols="50" placeholder="Message" required ></textarea><br>
+                    <input type="submit" id="submit"  value="" />
+                </form> 
+            </div>
+
+            </div>
+        </div>
+
+        <!-- ------------------CARRIER PATH----------------------------- -->
+        <div id="careerPath">
+            <img src="images/careerPath.jpg" alt="career path" width="100%"/>
+        </div>
+
+
+        <!-- ------------------JOB LIST---------------------------------- -->
+        
+        <div id="jobList">
+            <img src="images/2017-06-21-PHOTO-00001141.jpg" alt="Job Ranking">
+        </div>
+
+        <!-- ----------------------NEWSLETTER----------------------- -->
+        <div class="container-fluid row" id="news">
+            <h2>Subscribe me for latest Technology News and Jobs</h2>
+            <form method="POST" action="" id="newsForm">
+                <span class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><input type="text" required id="newsName" placeholder="Name" /> </span>
+                <span class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><input type="tel" required id="newstel" placeholder="Mobile" /> </span>
+                <span class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><input type="email" required id="newsEmail" placeholder="E-Mail" /> </span>
+                <span class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><input type="submit" id="submit" value="" /> </span>
+            </form>
+        </div>
+
+        <!-- ------------------AFFLIATED COMPANY------------------- -->
+        <div class="container-fluid" id="affCompany">
+            <h1>Client and Placement Partners</h1>
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                    <li class="item4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/fPanda.png">
+                        <h2>Company 1</h2>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/fPanda.png">
+                        <h2>Company 2</h2>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/fPanda.png">
+                        <h2>Company 3</h2>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/fPanda.png">
+                        <h2>Company 4</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------EXPERIENCE------------------------ -->
+
+        <div class="container-fluid" id="experience">
+            <div id="myExperience" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                    <li class="item4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <i class="fa fa-quote-left"></i>
+                        <img src="images/Archana.jpg" alt="career path">
+                        <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN<br />
+                            IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p>
+                        
+                    </div>
+
+                    <div class="item">
+                        <i class="fa fa-quote-left"></i>
+                        <img src="images/Archana.jpg" alt="career path">
+                        <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN<br />
+                            IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p>
+                        
+                    </div>
+
+                    <div class="item">
+                        <i class="fa fa-quote-left"></i>
+                        <img src="images/Archana.jpg" alt="career path">
+                        <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN<br />
+                            IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p>
+                        
+                    </div>
+
+                    <div class="item">
+                        <i class="fa fa-quote-left"></i>
+                        <img src="images/Archana.jpg" alt="career path">
+                        <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN<br />
+                            IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- --------------------FOOTER------------------------------- -->
+        
+        <div class="container-fluid row">
+            <div id="footer">
+                <div id="footer-left">
+                    <p>About Tipping School</p><br/>
+                    <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN
+                        IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p></br/>
+                        IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN
+                    <p>IPSUM DOLOR TEMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERT SED AMET ACCUMSAN</p><br/>
+                </div>
+                <div id="footer-right">
+                    <p>B-60,First Floor, Sector 2,Near Sector 15<br /> 
+                        metro station,Noida
+                        Mobile:+91 - 9268224868<br />
+                        Email:beaninja@tippingschool.com<br />
+                        www.tippingschool.com<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+        <!-- --------------------- SCRIPT CONNECTION ----------------- -->
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

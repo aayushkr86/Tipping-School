@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>private members</title>
+            <body>
+                <script>
+                function Employee(firstname,lastname){
+                    this.firstname = firstname;
+                    this.lastname = lastname;
+                    var fullname = "firstname:"+this.firstname+"  "+"lastname:"+this.lastname+" ";
+                         
+                          //Private Function
+                        var privateGetFullName=function (){
+                            fullname = "firstname:"+firstname+"  "+"lastname:"+lastname+" ";
+                           return fullname;
+                        }
+                           //previledged function 
+                        this.previledgedGetFullName=function(){
+                        return privateGetFullName();
+                        }
+                        //public function
+                        Employee.prototype.publicGetFullName=function(){
+                             return this.previledgedGetFullName();
+                        }    
+                }
+                 var employee = new Employee("tom","harry");
+
+                 console.log(employee.publicGetFullName() +"</br>");
+                 console.log(employee.previledgedGetFullName() +"<br/>");
+                 
+                 employee.privateGetFullName;
+                 employee.privateGetFullName = "ABC";
+                 console.log(employee.privateGetFullName);      
+                
+                </script>
+            </body>
+    </head>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>recursion</title>
+</head>
+<body>
+    <script>
+        
+        isEven();
+       
+       function isEven(){
+       var n=parseInt (prompt("Enter a number","number"),10);
+       if(n<0)
+          {
+              isEven();
+          }
+       if(n%2==0){
+           document.write("True");
+          }
+          else if(n%2!=0)
+          {
+              document.write("Flase");
+          }
+       }
+</script>
+</body>
+</html>

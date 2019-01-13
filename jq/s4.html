@@ -1,0 +1,36 @@
+<html>
+  <head>
+   <title>Sample Code4</title>
+  </head>
+  <body>
+      <p>First Paragraph</p>
+      <div>
+          <p>First Div: First Paragraph</p>
+          <span>First Div: First Span</span>
+          <p>First Div: Second Paragraph</p>
+      </div><br/>
+      <div>
+          <span>Second Div: First Span</span>
+          <p>Second Div: First Paragraph</p><br>
+          <span>Second Div: Second Span</span>
+      </div><br/>
+      <button>Click Me!!!</button><br/>
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script>
+        $(document).ready(function() {
+         $("button").click(function(){
+                //$("p:first-child").hide();
+                //$("span:last-child").hide();
+                //$("p:first-of-type").hide();
+                //$("p:nth-child(2)").hide();
+                //$("p:nth-of-type(2)").css("background-color","yellow");
+                //$("span:only-child").hide();
+                //$("div>span").css("background-color","yellow");
+                //$("div span").css("background-color","red");
+                // $("p + span").css("background-color","yellow");
+                 $("span ~ p").css("background-color","yellow");
+         });
+        });
+   </script>
+   </body>
+</html>

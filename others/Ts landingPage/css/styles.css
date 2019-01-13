@@ -1,0 +1,299 @@
+html,body {
+    overflow-x: hidden;
+}
+
+
+/* -----Navbar------- */
+.navbar-brand {
+    padding-top: 10px;
+}
+
+.navbar {
+    border-radius : 0;
+}
+
+ul>li {
+    font-weight: bold;
+}
+
+ul>li:hover {
+    background-color: lightcoral;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* --------jumbotron------ */
+#jumboBox {
+    height: 700px;
+    background-image: url("../images/dietmar-becker-131.jpg");
+    background-size: cover;
+    position: relative;
+    margin-top: -20px;
+}
+
+.jumbotron {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;  
+    margin-bottom: 0px;
+    height: 300px;
+    text-align: center;
+    background-color:rgba(0,0,0,.5);
+    color: white;
+    padding-top: 0;
+    font-weight: bold;
+}
+
+.jumbotron>h2 {
+    margin-top: 0;
+}
+
+.jumbotron>h2:hover , .jumbotron>h3:hover {
+    cursor: default;
+}
+/* course info and contact us */
+
+
+#courseInfo {
+    border: 1px solid lightgray;
+    margin: 30px;
+    margin-right: 0;
+    padding-right: 0;
+    height: 400px;   
+}
+
+
+
+
+#course {
+    width: 250px;
+    height: 100%;
+    margin: 0px;
+}
+#course>div {
+    
+    font-size: 22px;
+    width: 100%;
+    padding:3% 0;
+    border-bottom: 1px solid black;
+}
+
+#course>div:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+#courseInfo>h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#info {
+    position: relative;
+    font-size: 16px;
+}
+
+
+
+
+#contactUs {
+    
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#contactUs > h6 {
+    margin-top: 0;
+}
+
+@media (min-width:1200px) and (max-width: 1440px) {
+    #contactUs {
+    
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    width: 500px;
+}
+}
+
+/* ----------FORM---------- */
+
+#contactForm>* {
+    width: 80%;
+    margin-bottom:10px;
+}
+
+input,textarea,select {
+    border: 3px solid lightgray;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#contactForm > input[type=submit] {
+    display: block;
+    background-image: url("../images/001-rocket.svg") ;
+    background-size: contain;
+    width: 90px;
+    background-color: red;
+    border-radius: 25px;
+    height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 10px ;
+    background-position: center;
+    position: relative;
+    left: 350px;
+    
+}
+#contactForm > input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* ---------- career path--------- */
+#careerPath > img {
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+/* -------JOB LIST-------- */
+
+#jobList > img {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    display: block;
+}
+
+/* --------newsletter form ------ */
+
+#news > h2 {
+    text-align: center;
+}
+
+#newsForm > span > input:not(submit){
+    width: 100%;
+    padding:0; 
+    
+}
+
+#newsForm {
+    padding-left: 80px;
+}
+
+
+@media (max-width: 768px) {
+    #newsForm > span {
+        width: 100%;
+    }
+}
+
+#newsForm > span > input[type=submit]{
+    display: block;
+    background-image: url("../images/001-rocket.svg") ;
+    background-size: contain;
+    width: 90px;
+    background-color: red;
+    border-radius: 25px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -10px;
+
+}
+
+#newsForm > span > input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* ---------AFF COMPANY---------- */
+
+#affCompany {
+    text-align: center;
+    background-color: lightgray;
+}
+
+#myCarousel > div > .item > img {
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+/* ----------Experience ----------- */
+
+#experience {
+    background-image: url("../images/Bridge2.jpg");
+    height: 400px;
+}
+
+#myExperience > div > .item > img {
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    top: 7px;
+    left: 50px;
+}
+
+#myExperience > div > .item > p {
+    position: relative;
+    left: 200px;
+    top: -70px;
+    color: white;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+.item > i {
+    font-size: 60px;
+    color: whitesmoke;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    z-index: -1;
+
+
+}
+
+#myExperience > div > .item > video {
+    float: right;
+}
+
+
+
+/* -----------FOOTER ------------- */
+
+#footer{
+    height:250px;
+    width:100%;
+    background-color:#171B36;
+    margin-top:0px;
+    margin-right: 0px;
+} 
+
+#footer-left{
+    float:left;
+    height:250px;
+    width:60%;
+    color:white;
+    padding-top:30px;
+    padding-left: 30px;
+} 
+
+#footer-right{
+    float:right;
+    height:250px;
+    width: 40%;
+    color:white;
+    padding-left:200px;
+    padding-top: 75px;
+    
+}

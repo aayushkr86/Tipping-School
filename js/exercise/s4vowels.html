@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vowels</title>
+        </head>
+        <body>
+            <script>
+            var str=prompt("enter a string","string");
+            vowels(str);
+
+            function vowels(str)
+            {
+                var ch,count=0;
+                len=str.length-1;
+                for(var i=0;i<len;i++)
+                {
+                 ch=str[i];
+                if((ch=='A'||ch=='a')||(ch=='E'||ch=='e')||(ch=='I'||ch=='i')||(ch=='O'||ch=='o')||(ch=='U'||ch=='u'))
+                { 
+                    count++;
+                }
+                }
+                document.write("vowels"+count);
+            }
+            </script>
+            </body>
+            </html>

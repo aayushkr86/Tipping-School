@@ -1,0 +1,29 @@
+function Person(name, dob) {
+	
+	this.name = name
+	
+	this.dob = dob
+
+}
+
+
+
+Person.prototype.age = function() {
+	
+	console.log(2018 - this.dob)
+
+}
+
+
+
+var john = new Person('steve', 1990);
+
+
+
+john.has
+undefined
+john.hasOwnProperty('name')
+  ==>true
+
+john.hasOwnProperty('age')  ==>
+false

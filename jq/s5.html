@@ -1,0 +1,23 @@
+<html>
+  <head>
+   <title>Sample Code5</title>
+  </head>
+  <body>
+      <button>Click Me!!!</button><br/>
+       <p id="first">First Paragraph</p>
+       <p id="second">Second Paragraph</p>
+       <p id="fourth">Fourth Paragraph</p>
+       <p id="fifth">Fifth Paragraph</p>
+       <script src="js/jquery-2.1.4.min.js"></script>
+  <script>     
+       $(document).ready(function() {
+    $("button").click(function(){
+            //$("[id='first']").css("background-color","yellow");
+            //$("[id^='fi']").css("background-color","yellow");
+            //$("[id$='th']").css("background-color","yellow");
+            $("[id*='o']").css("background-color","yellow");
+       });
+ });
+ </script>     
+  </body>
+</html>

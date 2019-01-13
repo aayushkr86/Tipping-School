@@ -1,0 +1,214 @@
+1.
+function mul(a){
+    return function(b){
+        return function(c){
+            return a*b*c;
+        }
+    }
+}
+console.log(mul(2)(3)(4));
+console.log(mul(4)(3)(4));
+
+2.
+var arr= [4,5,6,7,8,9];
+for(i=arr[0];i<arr.length-1;i++){
+    arr.pop();
+}
+console.log(arr[i]);
+
+3.(with var)
+var a=10;
+console.log(a);
+(function (){
+  var a=5;
+   console.log(a);
+})();
+console.log(a);
+o/p:
+10
+5
+10
+(without var)
+var a=10;
+console.log(a);
+(function (){
+   a=5;
+   console.log(a);
+})();
+console.log(a);
+o/p:
+10
+5
+5
+
+4.
+xyz
+
+5.
+
+
+6.
+var x = Data("abc");
+var y = MoreData(x);
+var z = MoreData(y);
+
+Data(function(x){
+    MoreData(x, function(y){
+        MoreData(y, function(z){ 
+        });
+    });
+});
+
+$(#selectors).on(scroll,function(){
+   $(#selectors2).click(function(){
+     //do something;
+   });
+});
+
+7.
+  a.5
+  b.1,
+    truexyz,
+    2,
+    1
+  c.undefined,
+    5000$
+
+8.
+function name(){
+    var nam="rahul kumar"
+    console.log(nam);
+}
+name();
+
+function name(name){
+this.name=name;
+console.log("name " + this.name);
+}
+name('nike');
+
+var name = function name(){
+    var name="nikke";
+    console.log("name"+name);
+}
+name();
+
+9.
+1st method(object literals)
+
+var person ={
+    firstname:"fluffy",
+    lastname:"duffy",
+    designation:"student"
+}
+console.log(person.firstname);
+
+2nd method(constructor)
+
+function name(){
+    this.firstname=firstname;
+    this.lastname=lastname;
+}
+var name = name("fluffy","duffy");
+console.log(person.firstname);
+
+
+
+3rd method(object creation)
+
+var Person = Object.create(Object.prototype{
+    name:{
+        firstname:"fluffy",
+    	lastname:"duffy",
+    	designation:"student"
+    }
+});
+console.log(Person);
+
+10.
+(object based inheritance)
+var Job = function(){
+this.pays =true;
+};
+Job.prototype.print =function(){
+console.log(this.pays ? "Please hire me" : "no thank you");
+};
+TechJob.prototype = Object.create(Job.prototype);
+TechJob.prototype.constructot = TechJob;
+var softwarePosition = new TechJob("JavaScript Programmer",true);     
+console.log(softwarePosition.print());
+
+11.
+(function(){
+    
+    console.log("this is a anonymous function");
+    
+})();
+
+12.
+var clone={
+    name:"xyz",
+    work:"nothing",
+    color:"green"
+}
+function deepClone(){
+   var new = Object.Create("abc");
+}
+
+deepClone(clone.name);
+
+
+13.
+recursion function
+
+14.var baz;
+(function(){
+    console.log(bar);
+    console.log(baz);
+    foo();
+    function foo(){
+        console.log("aloha");
+    }
+    var bar = 1;
+    baz = 2;
+})();
+
+o/p: undefined,
+     undefined,
+     aloha
+
+15.var sample = function(){
+    this.name=name//public var
+    var name ="xyz";//private var
+}
+sample.Prototype.staticvar=10//static var
+
+16. var letters = [a,b,c,d,e];
+     letters.splice(2,2,"x","y");
+     console.log(letters);//  abxye
+
+17.function mul(a){
+    return function(b){
+        return function(c){
+            return a*b*c;
+        }
+    }
+}
+
+console.log(mul(2)(3)(4));
+console.log(mul(4)(3)(4));
+
+18. hoisting- It moves all declaration at top of the block.
+
+var salary = "1000$";
+(function(){
+    console.log("Original" +salary);
+    var salary="5000$";
+    console.log("new " + salary);
+})();
+
+here the salary variable declaration moves to the top of the block .So its o/p is Undefined of the 1st console;
+
+19.
+
+

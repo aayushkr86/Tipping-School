@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>inheritance</title>       
+            <body>
+                <script>
+                    //base class
+                var Job = function(){
+                    this.pays =true;
+                };
+                //prototype method
+                Job.prototype.print =function(){
+                    console.log(this.pays ? "Please hire me" : "no thank you");
+                };
+                //sub class   
+                var TechJob =function(title,pays){
+                    Job.call(this);
+                    this.title =title;
+                    this.pays = pays;
+                };
+
+                TechJob.prototype = Object.create(Job.prototype);
+                TechJob.prototype.constructot = TechJob;
+
+                /*TechJob.prototype.print =function(){
+                    console.log(this.pays ? this.title = "job is great" : "learn more");
+                };*/
+                
+                 var softwarePosition = new TechJob("JavaScript Programmer",true);
+                 var softwarePosition2 = new TechJob("vb Programmer",false);      
+                
+                console.log(softwarePosition.print());
+                console.log(softwarePosition2.print());
+                </script>
+            </body>
+    </head>
+</html>

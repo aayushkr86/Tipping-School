@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <head>
+   <title>Jq form</title>   
+  </head>
+  <body>
+      <form action="" id="the-form">
+                  <p>
+                  E-mail
+                  <input name="..." data-validation="email" data-validation-help="Some help info..">
+                  </p>
+                  <p>
+                  URL
+                  <input name"..." data-validation="url">
+                  </p>
+                  <p>
+                  Only allows alphanumeric characters and hyphen and underscore
+                  <input name="..." data-validation="alphanumeric" data-validation-allowing="-_">
+                  </p>
+                  <p>
+                  Only lowercase letters a-z(regexp)
+                  <input name="..." data-validation="custom" data-validation-regexp="^([a-z]+)$">
+                  </p>
+                  <p>
+                  Minimum 5 stars
+                  <input name="..." data-validation="length" data-validation-length="min5">
+                   </p>
+                   <p>
+                  Maximum 5 chars
+                  <input name="..." data-validation="length" data-validation-length="max5">
+                  </p>
+                  <p>
+                  Between 3-5 chars
+                  <input name="..." data-validation="length" data-validation-length="3-5">
+                  </p>
+                   <p>
+                  What's your favorite color?
+                  <input name="..." data-suggestion="white,green,blue,black,brown">
+                  </p>
+                   <p>
+                  Validation e-mail but only if an answer is given
+                  <input name="..." data-validation="email" data-validation-optional="true">
+                  </p>
+                   <p>
+                  Restrict length
+                  <span id="max-length-element">100</span>char left
+                  <textarea id="the-textarea" name="text"></textarea>
+                   </p>
+                  <p><input type="submit"></p>
+ </form>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script>
+      $.validate();
+      $('#my-textarea').restrictLength($('#max-length-element'));
+      </script>
+  </body>
+</html>

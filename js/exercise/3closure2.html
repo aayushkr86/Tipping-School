@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>c2</title>
+    </head>
+    <body>
+    <script>
+function A(){
+    var a=5;
+    return function sum(){
+    var b=10;
+    return(a+b);
+    }
+}
+var num=A();
+console.log(A());
+console.log(num());
+
+    </script>
+</body>
+</html>

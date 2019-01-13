@@ -1,0 +1,14 @@
+var name= {
+	firstname : 'john',
+	lastname : 'smith',
+        something : function () {
+		var fullname = this.firstname +' '+this.lastname;
+		return fullname;	
+	}
+}
+
+var fullname = function() {
+		console.log(this.something());
+}
+
+var fullname1 = fullname.bind(name);

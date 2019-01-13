@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Minimum</title>
+    </head>
+    <body>
+    <script>
+    var str=prompt( "Enter the string","string");
+    var ch=prompt( "Enter the letter to count","str");
+    count(str,ch);
+
+function count(str,ch)
+{
+     var count=0,len;
+     len=str.length;
+    for(var i=0;i<len;i++)
+    {
+    if(ch==str[i])
+    {
+        count++;
+    }
+    }
+    document.write("count "+count);
+}
+
+
+
+    </script>
+</body>
+</html>
